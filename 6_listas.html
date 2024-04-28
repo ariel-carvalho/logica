@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let pessoa = ["Ariel", 34, "123.456.789-10", 1.75, true];        
+
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+
+        let letras = [];
+        let letra;
+        let contaLetra = 0;      
+        
+        recebeLetras();
+
+        console.log("A primeira letra digitada foi: ", letras[0])
+        console.log("A quarta letra digitada foi: ", letras[3])
+        console.log("A quinta letra digitada foi: ", letras[4])
+        console.log("A última letra digitada foi: ", letras[9])
+        console.log("O tamanho da lista é: ", letras.length)
+
+        function recebeLetras()
+        {
+            while (contaLetra < 10)
+            {        
+                letra = prompt("Digite uma letra");
+                letras.push(letra);
+                contaLetra++;
+            }
+
+            alert("Lista Cheia");
+
+            alert(letras);
+        }
+
+    </script>
+
+</body>
+</html>
